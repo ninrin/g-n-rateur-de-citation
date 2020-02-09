@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+   
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Générateur de citations</title>
+    <meta name="description" content="">
+    <meta name="ninrin" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	<link href="http://allfont.net/allfont.css?fonts=roboto-condensed" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+  </head>
+  
+  <body>
+	<div class= "container text-center">
+		<div class="row ">
+			<div class="col-lg-12 md-12">
+				<h4>Choisissez le type de citation</h4>
+					<select class="form-control form-control-lg" id="type">
+						<option value="politique">Politique</option>
+						<option value="pédagogique">Pédagogique</option>
+					</select>	
+			</div>
+		</div>
+		<div class="row">
+			<div class= "col lg-6">
+				<div class="form-group">
+					<label>Choisiez le nombre de paragraphe!</label>
+					<div class="radio">
+						<label><input type="radio" value="1" id="choix1" name="optradio" CHECKED>1</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" value="2" id="choix2" name="optradio" >2</label>
+					</div>
+					<div class="radio disabled">
+						<label><input type="radio" value="3" id="choix3" name="optradio" >3</label>
+					</div>
+					<div class="radio disabled">
+						<label><input type="radio" value="4" id="choix4" name="optradio" >4</label>
+					</div>
+					<div class="radio disabled">
+						<label><input type="radio" value="5" id="choix5" name="optradio" >5</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class= "col md-6">
+				<button id= "generer" onclick="generate()" class= "btn btn-large btn-info">Générer</button>
+			</div>
+			
+			<div class= "col md-6">	
+				<button id= "actualiser" onclick="resetFields()" value="Reset"  class= "btn btn-large btn-warning">Effacer</button>	
+			</div>	
+		</div>
+		<div class="row">
+			<div class= "col md-12 mt-5">
+				<blockquote class ="yo">
+					<p id="citation"> </p>
+					<p id="citation2"> </p>
+					<p id="citation3"> </p>
+					<p id="citation4"> </p>
+					<p id="citation5"> </p>	
+				</blockquote>
+			</div>
+		</div>
+	</div>
+	<script src= "main.js"></script>	
+	</body>
+	
+	</Html>
+			
